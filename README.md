@@ -26,27 +26,6 @@ Just open `index.html`, or serve the folder:
 python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
-
-## Publish on GitHub Pages
-
-1. Create a new repository on GitHub (for example `lucky-table-prototype`), public.
-2. Upload the **contents** of this folder so `index.html` sits at the repo root (drag and drop in the web UI works, or use git below).
-3. Go to **Settings → Pages**. Under *Build and deployment*, choose **Deploy from a branch**, branch `main`, folder `/ (root)`, then Save.
-4. After a minute your site is live at `https://<your-username>.github.io/<repo-name>/`.
-
-With git:
-
-```bash
-cd lucky-table-prototype
-git init -b main
-git add .
-git commit -m "Lucky Table prototype"
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-```
-
-Then do step 3 above. Paths are all relative and routing uses `#/hash` URLs, so it works under a repo subpath with no config.
-
 ## Project structure
 
 ```
